@@ -176,18 +176,18 @@ h6 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 50px;
   font-weight: 600;
   line-height: 110%;
 }
 @media (max-width: 1399px) {
   h1 {
-    font-size: 50px;
+    font-size: 58px;
   }
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 58px;
+    font-size: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -8434,7 +8434,7 @@ p.sticky-label {
   position: relative;
   background: var(--header);
   z-index: 9;
-  padding: 18px 0;
+  padding: 9px 0;
 }
 .footer-bottom.bg-4 {
   background: #1D2250;
@@ -8448,7 +8448,7 @@ p.sticky-label {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center !important;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
   }
 }
