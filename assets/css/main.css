@@ -446,7 +446,7 @@ p {
 
 .back-to-top {
   border-radius: 10px;
-  background-color: var(--theme-color-2);
+  background-color: var(--header);
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -8429,7 +8429,7 @@ p.sticky-label {
 
 .footer-bottom {
   position: relative;
-  background: #44455E;
+  background: var(--header);
   z-index: 9;
   padding: 18px 0;
 }
