@@ -1655,6 +1655,9 @@ p {
 .offcanvas__logo a img {
   width: 150px;
 }
+.container {
+  overflow-x: hidden !important;
+}
 
 .offcanvas__wrapper {
   position: relative;
