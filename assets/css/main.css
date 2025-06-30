@@ -9,6 +9,9 @@ Version: 1.0.0
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+html, body {
+  overflow-x: hidden !important;
+}
 :root {
   --body: #fff;
   --black: #000;
@@ -279,7 +282,7 @@ p {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
   border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #AF49E5;
+  border-top-color: var(--theme-color);
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -302,7 +305,7 @@ p {
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
-  color: #AF49E5;
+  color: var(--theme-color);
   position: relative;
 }
 .preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
@@ -342,7 +345,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: #AF49E5;
+  color: var(--theme-color);
 }
 .preloader .loader {
   position: fixed;
