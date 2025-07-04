@@ -283,14 +283,14 @@ p {
   border-radius: 50%;
   border: 3px solid rgba(0, 0, 0, 0.2);
   border-top-color: var(--theme-color);
-  height: 9em;
+  height: 5em;
   margin: 0 auto 3.5em auto;
-  width: 9em;
+  width: 5em;
 }
 @media (max-width: 767px) {
   .preloader .animation-preloader .spinner {
-    width: 7.5em;
-    height: 7.5em;
+    width: 2.5em;
+    height: 2.5em;
     margin: 0 auto 1.5em auto;
   }
 }
@@ -301,7 +301,7 @@ p {
 }
 @media (max-width: 767px) {
   .preloader .animation-preloader .txt-loading {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
