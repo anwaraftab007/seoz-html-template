@@ -16,7 +16,9 @@ html, body {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme-color:#FDA52A ;
+  /* --theme-color:#F5761A ; */
+  /* #F5761A */
+  --theme-color:#F5761A ;
   --theme-color-2:#FF792E;
   --header:#1A4D8F;
   --text:#656565;
@@ -28,7 +30,7 @@ html, body {
 }
 
 .theme-btn {
-  background: var(--theme-color);
+  background: #F5761A;
   color: var(--white);
   display: inline-block;
   font-size: 15px;
@@ -160,6 +162,39 @@ input:focus {
 input {
   color: var(--white);
 }
+.hero-1 .hero-content p {
+  font-size: 20px;
+}
+.custom-hero-section {
+  max-width: 1200px;  /* Or 1140px, 960px - as you like */
+  margin: 0 auto;     /* This will center it */
+  border-radius: 12px;  /* Optional: rounded edges */
+  /* overflow: hidden;     Keep content inside border-radius */
+  padding: 0 20px;     /* A little side padding for smaller screens */
+}
+.custom-hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  /* overflow: hidden; <-- remove this to allow image to be fully visible */
+  padding: 0 20px;
+}
+
+.hero-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 
 h1,
 h2,
@@ -176,33 +211,38 @@ h6 {
 }
 
 h1 {
-  font-size: 58px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 110%;
 }
 @media (max-width: 1399px) {
   h1 {
-    font-size: 58px;
+    font-size: 46px;
   }
 }
-@media (max-width: 991px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 1258px) {
   h1 {
     font-size: 44px;
   }
 }
+@media (max-width: 991px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 575px) {
   h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 @media (max-width: 470px) {
   h1 {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 
@@ -527,7 +567,7 @@ p {
 }
 
 .footer-bg {
-  background-color: #FDA52A;
+  background-color: #F5761A;
 }
 
 .section-padding {
@@ -1987,7 +2027,7 @@ p {
 
 .hero-1 {
   padding: 150px 0 100px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
   position: relative;
 }
 .hero-1 .hero-content {
@@ -1997,6 +2037,9 @@ p {
 @media (max-width: 767px) {
   .hero-1 .hero-content {
     text-align: center;
+  }
+  .hero-1 {
+    padding-bottom: 10px;
   }
 }
 .hero-1 .hero-content h1 {
