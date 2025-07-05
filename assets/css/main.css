@@ -176,7 +176,7 @@ h6 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 58px;
   font-weight: 600;
   line-height: 110%;
 }
@@ -1065,7 +1065,7 @@ p {
 }
 .header-main .main-menu ul li a {
   display: inline-block;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
   color: var(--header);
   font-family: "Inter", sans-serif;
@@ -1204,7 +1204,7 @@ p {
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn {
   padding: 14px 20px;
   color: var(--white) !important;
-  font-size: 16px;
+  font-size: 19px;
   text-align: center;
   border-radius: 0px !important;
   background-color: var(--theme-color-2);
