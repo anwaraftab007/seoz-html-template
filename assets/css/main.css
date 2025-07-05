@@ -2024,7 +2024,9 @@ p {
     display: none;
   }
 }
-
+p {
+  font-size: 19px;
+}
 .hero-1 {
   padding: 150px 0 100px;
   padding-bottom: 60px;
