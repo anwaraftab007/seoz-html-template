@@ -234,6 +234,9 @@ h1 {
   h1 {
     font-size: 40px;
   }
+  .footer-bottom .footer-wrapper .footer-menu li a {
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 575px) {
   h1 {
