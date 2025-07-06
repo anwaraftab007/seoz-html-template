@@ -2032,7 +2032,24 @@ p {
 }
 p {
   font-size: 19px;
+  line-height: 1.6; /* optional: improves readability */
 }
+
+@media (max-width: 767px) {
+  p {
+    font-size: 16px; /* or 15px depending on your liking */
+  }
+  .tab-btn {
+    font-size: 16px !important;
+}
+.edu-tab-btn {
+    font-size: 16px !important;
+  }
+  .custom-tab-buttons {
+    flex : 1 1 0px !important;
+  }
+}
+
 .hero-1 {
   padding: 150px 0 100px;
   padding-bottom: 60px;
