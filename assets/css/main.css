@@ -234,7 +234,11 @@ h1 {
   h1 {
     font-size: 40px;
   }
+
   .footer-bottom .footer-wrapper .footer-menu li a {
+    font-size: 16px !important;
+  }
+  .footer-widget-wrapper .single-footer-widget .list-area li {
     font-size: 16px !important;
   }
 }
