@@ -67,6 +67,29 @@ html, body {
   color: #000;
 }
 
+.logo-fade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* spacing from text */
+}
+
+.logo-fade img {
+  width: 100px; /* adjust as needed */
+  animation: fadeLogo 2s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes fadeLogo {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
 
 .theme-btn {
   background: #FF6B35;
