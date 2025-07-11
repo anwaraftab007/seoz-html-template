@@ -29,6 +29,45 @@ html, body {
   ---box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
 
+/* Basic Modal Styles */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100dv;
+  height: 100dvh;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 20px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  /* padding: 20px; */
+  border-radius: 8px;
+  position: relative;
+  max-width: 900px;
+}
+
+/* Close Button */
+.close-button {
+  color: var(--header);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: #000;
+}
+
+
 .theme-btn {
   background: #FF6B35;
   color: var(--white);
@@ -1357,7 +1396,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9998;
   width: 100%;
 }
 .header-1 .header-main {

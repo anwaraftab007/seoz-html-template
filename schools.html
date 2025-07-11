@@ -49,9 +49,9 @@
                 <span class="letters-loading" data-text-preloader="E" style="--i:7;">E</span>
                 <span class="letters-loading" data-text-preloader="A" style="--i:8;">A</span>
                 <span class="letters-loading" data-text-preloader="D" style="--i:9;">D</span>
-                <span class="letters-loading" data-text-preloader=" " style="--i:10;">&nbsp;</span>
+                <!-- <span class="letters-loading" data-text-preloader=" " style="--i:10;">&nbsp;</span>
                 <span class="letters-loading" data-text-preloader="A" style="--i:11;">A</span>
-                <span class="letters-loading" data-text-preloader="I" style="--i:12;">I</span>
+                <span class="letters-loading" data-text-preloader="I" style="--i:12;">I</span> -->
               </div>
             <p class="text-center">Loading</p>
         </div>
@@ -72,7 +72,76 @@
             </div>
         </div>
     </div>
+    <script>
+      function openModal() {
+        document.getElementById("contactModal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("contactModal").style.display = "none";
+      }
+      
+      // Optional: close modal if clicked outside
+      window.onclick = function(event) {
+        var modal = document.getElementById("contactModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <!-- Contact Popup Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <!-- Your Contact Form Starts -->
+    <div class="contact-wrapper-6">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      
+       <div class="section-title text-center">
+          <h2 class="char-animation" style="perspective: 300px;">Get in Touch</h2>
+      </div>
+      <form action="#" id="contact-form" class="contact-form-box">
+          <div class="row g-4 align-items-center justify-content-center">
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
+                  <div class="form-clt">
+                      <input type="text" name="name" id="name" placeholder="Name">
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+                  <div class="form-clt">
+                      <input type="text" name="email" id="email2" placeholder="Email address">
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s;">
+                  <div class="form-clt">
+                      <input type="text" name="phone" id="phone" placeholder="Phone number">
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s" style="visibility: visible; animation-delay: 0.7s;">
+                  <div class="form-clt">
+                      <input type="text" name="subject" id="subject" placeholder="Your subject">
+                  </div>
+              </div>
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                  <div class="form-clt">
+                      <textarea name="message" id="message" placeholder="Write a message..."></textarea>
+                  </div>
+              </div>
+              <div class="col-12 wow fadeInUp" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.9s;">
+                <div class="contact-button text-center">
+                  <button type="submit" class="theme-btn w-100 p-3">
+                    Send Your Message
+                    <!-- <i class="far fa-arrow-right "></i> -->
+                  </button>
+                </div>
+              </div>
+              
+          </div>
+      </form>
+  </div>
+    <!-- Your Contact Form Ends -->
 
+  </div>
+</div>
     <!-- Back To Top start -->
     <!-- <button id="back-top" class="back-to-top">
         <i class="fas fa-long-arrow-up"></i>
@@ -155,7 +224,7 @@
                         <!-- Support Contact -->
     
                         <!-- Get Started Button -->
-                        <a href="contact.html" class="theme-btn">
+                        <a onclick="openModal()" class="theme-btn">
                             Get in touch <i class="far fa-arrow-right"></i>
                         </a>
     
@@ -584,6 +653,21 @@ Credit Access for all Indians
                                                onmouseout="this.style.borderBottomColor='transparent'">
                                                credahead@gmail.com
                                             </a>
+                                            <br>
+                                            <a href="mailto:credahead@gmail.com"
+                                                 style="
+                                                     color: #000;
+                                                     text-decoration: none;
+                                                     position: relative;
+                                                     display: inline-block;
+                                                     padding-bottom: 2px;
+                                                     border-bottom: 2px solid transparent;
+                                                     transition: border-color 0.3s ease;
+                                                 "
+                                                 onmouseover="this.style.borderBottomColor='#000'"
+                                                 onmouseout="this.style.borderBottomColor='transparent'">
+                                                 contact@credahead.ai
+                                              </a>
                                         </p>
                                     </div>
                                 </li>
