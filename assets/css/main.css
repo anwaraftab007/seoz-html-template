@@ -226,7 +226,21 @@ h1 {
   h1 {
     font-size: 44px;
   }
+  .cta-subtext{
+   min-width: 800px; 
+  }
 }
+@media (min-width: 1058px) {
+  h1 {
+    font-size: 44px;
+  }
+  .cta-subtext-school{
+   width: 520px !important; 
+  }
+}
+.cta-subtext-school{
+  width: 320px; 
+ }
 @media (max-width: 991px) {
   h1 {
     font-size: 42px;
@@ -236,6 +250,9 @@ h1 {
   h1 {
     font-size: 40px;
   }
+  .cta-subtext-school{
+    width: 320px; 
+   }
 
   .footer-bottom .footer-wrapper .footer-menu li a {
     font-size: 16px !important;
