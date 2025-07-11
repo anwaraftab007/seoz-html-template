@@ -18,9 +18,9 @@ html, body {
   --white: #fff;
   /* --theme-color:#F5761A ; */
   /* #F5761A */
-  --theme-color:#F5761A ;
+  --theme-color:#FF6B35 ;
   --theme-color-2:#FF792E;
-  --header:#1A4D8F;
+  --header:#0051C8;
   --text:#656565;
   --border:#E6EFFF;
   --ratting:#F8BC26;
@@ -30,7 +30,7 @@ html, body {
 }
 
 .theme-btn {
-  background: #F5761A;
+  background: #FF6B35;
   color: var(--white);
   display: inline-block;
   font-size: 19px;
@@ -163,7 +163,7 @@ input {
   color: var(--white);
 }
 .hero-1 .hero-content p {
-  font-size: 20px;
+  font-size: 23px;
 }
 .custom-hero-section {
   max-width: 1200px;  /* Or 1140px, 960px - as you like */
@@ -202,7 +202,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif; */
+  /* font-family: "Arial", sans-serif; */
+  font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -2044,7 +2046,7 @@ p {
 
 @media (max-width: 767px) {
   p {
-    font-size: 16px; /* or 15px depending on your liking */
+    font-size: 16px !important; /* or 15px depending on your liking */
   }
   .tab-btn {
     font-size: 16px !important;
@@ -2703,7 +2705,8 @@ p {
 }
 .choose-us-wrapper .choose-us-content .icon-box-items .icon-box .content h6 {
   color: #F05454;
-  font-family: "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
 }
 .choose-us-wrapper .choose-us-content .icon-box-items .icon-box .content h6 br {
   display: block;
@@ -5128,7 +5131,9 @@ p {
   margin: 0 0;
   position: relative;
   color: var(--header);
-  font-family: "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif;
+   */
+   font-family: "Inter", sans-serif;
   position: relative;
   padding-left: 40px;
 }
@@ -7043,7 +7048,8 @@ p {
   color: var(--white);
   font-size: 26px;
   line-height: 1.4;
-  font-family: "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   padding: 60px;
   text-align: center;
