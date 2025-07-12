@@ -1463,11 +1463,26 @@ p {
   border: 1px solid var(--theme-color);
   color: var(--header);
 }
-@media (max-width: 1199px) {
-  .header-1 .header-right .theme-btn {
-    display: none;
+
+@media (max-width: 767px) {
+  .header-btn i {
+    display: none !important;
   }
+  .header-1 .header-right .theme-btn {
+    display: inline-block !important;
+    font-size: 14px;     /* adjust font size for mobile */
+    padding: 8px 16px;   /* smaller padding for space */
 }
+.theme-btn i {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+}
+
+
 .header-1 .header-right .theme-btn i {
   background-color: var(--theme-color);
   color: var(--white);
