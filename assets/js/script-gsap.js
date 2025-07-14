@@ -23,7 +23,7 @@
         itemSplitted.split({ type: "chars, words" })
         tl.from(itemSplitted.chars,
           {
-            duration: 1,
+            duration: 0.6,
             delay: 0.5,
             x: 100,
             autoAlpha: 0,

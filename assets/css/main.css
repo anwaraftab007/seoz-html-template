@@ -33,7 +33,7 @@ html, body {
 .modal {
   display: none; /* hidden by default */
   position: fixed;
-  z-index: 9999;
+  z-index: 100000;
   left: 0;
   top: 0;
   width: 100dv;
@@ -270,7 +270,7 @@ h6 {
   margin: 0px;
   padding: 0;
   color: var(--header);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-weight: 400;
 }
 
