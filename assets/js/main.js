@@ -408,6 +408,12 @@
     }
 
     loader();
-    
+    const comment = document.createComment(" Designed by Anwar Aftab ");
+    const html = document.documentElement;
+    const body = document.body;
+
+    if (html && body && html.contains(body)) {
+        html.insertBefore(comment, body);
+    }
 })(jQuery); // End jQuery
 
