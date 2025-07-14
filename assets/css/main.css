@@ -316,7 +316,7 @@ h1 {
   .cta-subtext-school{
     width: 320px; 
    }
-
+   
   .footer-bottom .footer-wrapper .footer-menu li a {
     font-size: 16px !important;
   }
@@ -8723,4 +8723,7 @@ p.sticky-label {
 }
 .request-demo-wrapper .content p {
   color: var(--white);
+}
+.theme-btn.contact-btn.header-btn{
+  display: none !important;
 }
