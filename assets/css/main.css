@@ -8712,6 +8712,12 @@ p.sticky-label {
   .request-demo-wrapper {
     padding-top: 52px;
   }
+  .edu-tab-content{
+    padding: 5px !important;
+  }
+  .custom-tab-content{
+    padding: 5px !important;
+  }
 }
 .request-demo-wrapper .content {
   max-width: 710px;
@@ -8724,6 +8730,15 @@ p.sticky-label {
 .request-demo-wrapper .content p {
   color: var(--white);
 }
-.theme-btn.contact-btn.header-btn{
-  display: none !important;
+@media (max-width: 991px) {
+  .theme-btn.contact-btn.header-btn{
+    display: none !important;
+  }
+}
+.tab-image{
+  border-radius: 12px;
+  /* border-top-left-radius: 12px; */
+}
+.hero-img{
+  border-radius: 12px;
 }
