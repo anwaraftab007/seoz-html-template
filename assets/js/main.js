@@ -5,7 +5,79 @@
 
 (function($) {
     "use strict";
-
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+        if (!form) return; // Exit if no form on page
+      
+        const modal = createModal(); // Inject modal into DOM
+        document.body.appendChild(modal);
+      
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+      
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+      
+          // Spinner + disable
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+      
+          const formData = {
+            name: form.querySelector('#name')?.value || '',
+            email: form.querySelector('#email2')?.value || '',
+            phone: form.querySelector('#phone')?.value || '',
+            subject: form.querySelector('#subject')?.value || '',
+            message: form.querySelector('#message')?.value || '',
+          };
+      
+          try {
+            const res = await fetch('http://localhost:5000/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
+            });
+      
+            const data = await res.json();
+      
+            showModal(data.msg);
+          } catch (err) {
+            console.error('Submission error:', err);
+            showModal('Something went wrong!');
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          }
+        });
+      
+        function createModal() {
+          const modal = document.createElement('div');
+          modal.id = 'custom-modal';
+          modal.style.display = 'none';
+          modal.innerHTML = `
+            <div class="modal-overlay">
+              <div class="modal-box">
+                <p id="modal-message">...</p>
+                <button id="modal-close-btn">Close</button>
+              </div>
+            </div>
+          `;
+      
+          modal.querySelector('#modal-close-btn').addEventListener('click', () => {
+            modal.style.display = 'none';
+          });
+      
+          return modal;
+        }
+      
+        function showModal(message) {
+          const modal = document.getElementById('custom-modal');
+          if (!modal) return;
+      
+          modal.querySelector('#modal-message').innerText = message;
+          modal.style.display = 'flex';
+        }
+      });
+      
     $(document).ready( function() {
 
 
