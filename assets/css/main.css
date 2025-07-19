@@ -8390,7 +8390,7 @@ p.sticky-label {
 }
 /* Default size for medium & large screens */
 .responsive-logo {
-  width: 260px;
+  width: 300px;
   height: auto; /* this keeps the aspect ratio same */
 }
 
