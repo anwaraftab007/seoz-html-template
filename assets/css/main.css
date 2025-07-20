@@ -2174,7 +2174,7 @@ p {
   position: relative;
 }
 @media (min-width: 1199px) {
-  .hero-1 {
+  .hero-1.about{
     padding: 230px 0 80px;
   }
 }
