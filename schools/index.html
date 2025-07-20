@@ -92,6 +92,24 @@
         }
       }
       </script>
+
+<script>
+  function openReqModal() {
+    document.getElementById("reqModal").style.display = "block";
+  }
+  
+  function closeReqModal() {
+    document.getElementById("reqModal").style.display = "none";
+  }
+  
+  // Optional: close modal if clicked outside
+  window.onclick = function(event) {
+    var modal = document.getElementById("reqModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
       <!-- Contact Popup Modal -->
 <div id="contactModal" class="modal">
   <div class="modal-content">
@@ -124,6 +142,65 @@
                       <input type="text" name="subject" id="subject" placeholder="Your subject">
                   </div>
               </div>
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                  <div class="form-clt">
+                      <textarea name="message" id="message" placeholder="Write a message..."></textarea>
+                  </div>
+              </div>
+              <div class="col-12 wow fadeInUp" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.9s;">
+                <div class="contact-button text-center">
+                  <button type="submit" class="theme-btn w-100 p-3">
+                    Send Your Message
+                    <!-- <i class="far fa-arrow-right "></i> -->
+                  </button>
+                </div>
+              </div>
+              
+          </div>
+      </form>
+  </div>
+    <!-- Your Contact Form Ends -->
+
+  </div>
+</div>
+
+<div id="reqModal" class="modal">
+  <div class="modal-content">
+    <!-- Your Contact Form Starts -->
+    <div class="contact-wrapper-6">
+      <span class="close-button" onclick="closeReqModal()">&times;</span>
+      
+       <div class="section-title text-center">
+          <h2 class="char-animation" style="perspective: 300px;">Request a Demo</h2>
+      </div>
+      <form action="#" id="contact-form" class="contact-form-box">
+          <div class="row g-4 align-items-center justify-content-center">
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
+                  <div class="form-clt">
+                      <input type="text" name="name" id="name" placeholder="Name">
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+                  <div class="form-clt">
+                      <input type="text" name="email" id="email2" placeholder="Email address">
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s;">
+                  <div class="form-clt">
+                      <input type="text" name="phone" id="phone" placeholder="Phone number">
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s" style="visibility: visible; animation-delay: 0.7s;">
+                <div class="form-clt">
+                    <input type="text" name="organizationName" id="organizationName" placeholder="Organization Name">
+                </div>
+            </div>
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s" style="visibility: visible; animation-delay: 0.7s;">
+                <div class="form-clt">
+                    <input type="text" name="subject" id="subject" placeholder="Your subject">
+                </div>
+            </div>
               <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
                   <div class="form-clt">
                       <textarea name="message" id="message" placeholder="Write a message..."></textarea>
@@ -261,7 +338,7 @@
           </p>
           
           <div class="hero-btn wow fadeInUp" data-wow-delay=".7s">
-            <a onclick="openModal()" class="theme-btn contact-btn">
+            <a onclick="openReqModal()" class="theme-btn contact-btn">
               Request a demo
               <i class="far fa-arrow-right"></i>
             </a>
@@ -280,6 +357,7 @@
 
     </div>
   </div>
+
 </section>
 <style>
   .hero-img-wrapper{
@@ -524,7 +602,7 @@ object-position: top;
         </p>
         <br>
         <div class="cta-btn">
-          <a onclick="openModal()" class="theme-btn contact-btn"
+          <a onclick="openReqModal()" class="theme-btn contact-btn"
              style="padding: 14px 32px; font-weight: bold; background-color: #F5761A; color: #fff; border-radius: 8px; text-decoration: none; ">
             Request a Demo <i class="far fa-arrow-right"></i>
           </a>
