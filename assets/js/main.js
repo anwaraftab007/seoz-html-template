@@ -5,6 +5,7 @@
 
 (function($) {
     "use strict";
+    const API = 'https://credahead-backend.onrender.com';
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.getElementById('contact-form');
         if (!form) return; // Exit if no form on page
@@ -31,7 +32,7 @@
           };
       
           try {
-            const res = await fetch('http://localhost:5000/api/contact', {
+            const res = await fetch(`${API}/api/contact`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(formData),
@@ -48,6 +49,8 @@
             submitBtn.innerHTML = originalText;
           }
         });
+
+        
       
         function createModal() {
           const modal = document.createElement('div');
@@ -57,7 +60,7 @@
             <div class="modal-overlay">
               <div class="modal-box">
                 <p id="modal-message">...</p>
-                <button id="modal-close-btn">Close</button>
+                <button onclick="closeReqModal(); closeModal();" id="modal-close-btn">Close</button>
               </div>
             </div>
           `;
@@ -77,7 +80,78 @@
           modal.style.display = 'flex';
         }
       });
-      
+      document.addEventListener('DOMContentLoaded', function () {
+        const reqForm = document.getElementById('req-form');
+        if (!reqForm) return;
+    
+        const modal = createModal(); // reuse same modal logic
+        document.body.appendChild(modal);
+    
+        const submitBtn = reqForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+    
+        reqForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+    
+          // Spinner + disable
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+    
+          const formData = {
+            name: reqForm.querySelector('#name')?.value || '',
+            email: reqForm.querySelector('#email2')?.value || '',
+            phone: reqForm.querySelector('#phone')?.value || '',
+            organizationName: reqForm.querySelector('#organizationName')?.value || '',
+            subject: reqForm.querySelector('#subject')?.value || '',
+            message: reqForm.querySelector('#message')?.value || '',
+          };
+    
+          try {
+            const res = await fetch(`${API}/api/send-demo-request`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
+            });
+    
+            const data = await res.json();
+            showModal(data.msg); // ✅ show result message
+          } catch (err) {
+            console.error('Submission error:', err);
+            showModal('Something went wrong!');
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          }
+        });
+    
+        function createModal() {
+          const modal = document.createElement('div');
+          modal.id = 'custom-modal';
+          modal.style.display = 'none';
+          modal.innerHTML = `
+            <div class="modal-overlay">
+              <div class="modal-box">
+                <p id="modal-message">...</p>
+                <button onclick="closeReqModal(); closeModal();" id="modal-close-btn">Close</button>
+              </div>
+            </div>
+          `;
+    
+          modal.querySelector('#modal-close-btn').addEventListener('click', () => {
+            modal.style.display = 'none';
+          });
+    
+          return modal;
+        }
+    
+        function showModal(message) {
+          const modal = document.getElementById('custom-modal');
+          if (!modal) return;
+    
+          modal.querySelector('#modal-message').innerText = message;
+          modal.style.display = 'flex';
+        }
+      });
     $(document).ready( function() {
 
 
