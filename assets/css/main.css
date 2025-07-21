@@ -238,14 +238,14 @@ input {
   font-size: 23px;
 }
 .custom-hero-section {
-  max-width: 1200px;  /* Or 1140px, 960px - as you like */
+  /* max-width: 1200px;   */
   margin: 0 auto;     /* This will center it */
   border-radius: 12px;  /* Optional: rounded edges */
   /* overflow: hidden;     Keep content inside border-radius */
   padding: 0 20px;     /* A little side padding for smaller screens */
 }
 .custom-hero-section {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   border-radius: 12px;
   /* overflow: hidden; <-- remove this to allow image to be fully visible */
