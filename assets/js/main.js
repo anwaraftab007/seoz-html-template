@@ -62,7 +62,7 @@
             <div class="modal-overlay">
               <div class="modal-box">
                 <p id="modal-message">...</p>
-                <button onclick="closeReqModal(); closeModal();" id="modal-close-btn">Close</button>
+                <button onclick="closeModal();" id="modal-close-btn">Close</button>
               </div>
             </div>
           `;
