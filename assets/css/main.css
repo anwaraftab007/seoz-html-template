@@ -8841,7 +8841,7 @@ p.sticky-label {
     align-items: center;
     font-size: 19px;
     font-weight: 900;
-    padding: 7px 10px 6px !important;
+    padding: 7px 10px 6px 15px !important;
     /* padding-right: 5px; */
     border-radius: 0;
     line-height: 1;
