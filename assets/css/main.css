@@ -120,6 +120,12 @@ html, body {
   font-family: "DM Sans", sans-serif;
   overflow: hidden;
 }
+@media (max-width: 767px){
+  .theme-btn{
+    display: flex;
+    align-items: center;
+  }
+}
 .theme-btn i {
   width: 48px;
   height: 48px;
@@ -1487,7 +1493,7 @@ p {
   width: 28px;
   height: 28px;
   line-height: 28px;
-  margin-left: 8px;
+  margin-left: 12px;
   font-size: 12px;
 }
 }
@@ -8814,4 +8820,38 @@ p.sticky-label {
 
 .cta-subtext-text{
   font-family: 'ErasITCBold', sans-serif !important;
+}
+
+
+.btn-spacer {
+  width: 24px; /* Same width as the icon */
+  display: inline-block;
+}
+
+.btn-text {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 767px){
+  .hero-section-btn {
+    background: #FF6B35;
+    color: var(--white);
+    display: flex !important;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 900;
+    padding: 7px 10px 6px !important;
+    /* padding-right: 5px; */
+    border-radius: 0;
+    line-height: 1;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+  }
 }
