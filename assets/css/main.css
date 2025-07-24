@@ -8810,3 +8810,8 @@ p.sticky-label {
 #modal-close-btn:hover {
   background-color: #f5761a;
 }
+
+
+.cta-subtext-text{
+  font-family: 'ErasITCBold', sans-serif !important;
+}
