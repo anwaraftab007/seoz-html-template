@@ -213,7 +213,9 @@
 
         //>> Wow Animation Start <<//
         new WOW().init();
-
+        $('#contactModal').on('shown.bs.modal', function () {
+            wow.sync();  // Recalculate wow elements in modal
+          });
         //>> Nice Select Start <<//
         $('select').niceSelect();
 

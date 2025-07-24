@@ -8127,7 +8127,7 @@ p.sticky-label {
   line-height: 1;
   padding: 20px 25px;
   width: 100%;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: var(--text);
 }
 .contect-wrapper .contact-content .contact-form-box .form-clt textarea {
