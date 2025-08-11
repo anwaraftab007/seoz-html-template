@@ -5,7 +5,8 @@
 
 (function($) {
     "use strict";
-    const API = 'https://credahead-backend.onrender.com';
+    // const API = 'https://credahead-backend.onrender.com';
+    const API = 'https://credahead-backend-ekmy.onrender.com';
     // const API = 'http://localhost:5000';
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.getElementById('contact-form');
