@@ -253,26 +253,56 @@
                             </h1>                            
                             <p class="wow fadeInUp pt-4" data-wow-delay=".3s">AI-powered learning that makes personal finance simple and engaging.</p>
                            
-                            <div class="row justify-md-content-center gy-3 gy-md-0">
-                              <div class="col-12 col-md-auto">
+                            <div class="row align-items-center g-2 flex-wrap-nowrap button-row">
+                              <div class="col-auto">
                                 <div class="hero-btn wow fadeInUp mt-0" data-wow-delay=".7s">
-                                  <a onclick="openModal()" class="hero-section-btn theme-btn contact-btn">
+                                  <a onclick="openModal()" class="hero-try-btn try-btn contact-btn small-btn"
+                                     style="background-color: #1a4d8f;">
                                     Sign Up Now
-                                    <i class="far fa-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </div>
-                              <div class="col-12 col-md-auto">
-                                <div class="hero-btn wow fadeInUp mt-0" data-wow-delay=".7s">
-                                  <a href="https://credahead-mvp-demo.netlify.app/"
-                                     class="hero-try-btn try-btn contact-btn"
-                                     style="background-color: #1a4d8f; ">
-                                    Try Our Demo
                                     <i class="far fa-arrow-right" style="color: #1a4d8f;"></i>
                                   </a>
                                 </div>
                               </div>
+                              <div class="col-auto">
+                                <div class="hero-btn wow fadeInUp mt-0" data-wow-delay=".7s">
+                                  <a href="https://credahead-mvp-demo.netlify.app/"
+                                     class="hero-section-btn theme-btn contact-btn small-btn">
+                                    Try Our Demo
+                                    <i class="far fa-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
                             </div>
+                            
+                            
+<style>
+/* Default: normal layout on medium & larger devices */
+.button-row {
+  justify-content: flex-start; /* not centered */
+  gap: 15px;
+}
+
+/* Below medium (mobile): center the buttons */
+@media (max-width: 767px) {
+  .button-row {
+    justify-content: center !important;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .buttons-row {
+    justify-content: center !important;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .small-btn {
+    font-size: 0.85rem;
+    /* padding: 7px 16px; */
+    white-space: nowrap;
+  }
+}
+
+</style>                            
                         </div>
                     </div>
                     <div class="col-lg-6 hero-image-col ps-lg-5">
@@ -801,31 +831,64 @@
           <span class="header-color" style="color: #1A4D8F;"> Build.</span>
         </p>
         <br>
-        <div class="row justify-content-center gy-3 gy-md-0">
+        <div class="row align-items-center g-2 flex-wrap-nowrap buttons-row">
           <div class="col-auto">
-            <div class="hero-btn wow fadeInUp" data-wow-delay=".7s">
-              <a onclick="openModal()" class="hero-section-btn theme-btn contact-btn">
+            <div class="hero-btn wow fadeInUp mt-0" data-wow-delay=".7s">
+              <a onclick="openModal()" class="hero-try-btn try-btn contact-btn small-btn"
+              style="background-color: #1a4d8f;">
                 Sign Up Now
-                <i class="far fa-arrow-right"></i>
+                <i class="far fa-arrow-right"  style="color: #1a4d8f;"></i>
               </a>
             </div>
           </div>
           <div class="col-auto">
-            <div class="hero-btn wow fadeInUp" data-wow-delay=".7s">
+            <div class="hero-btn wow fadeInUp mt-0" data-wow-delay=".7s">
               <a href="https://credahead-mvp-demo.netlify.app/"
-                 class="hero-try-btn try-btn contact-btn"
-                 style="background-color: #1a4d8f;">
+                 
+               class="hero-section-btn theme-btn contact-btn small-btn">
                 Try Our Demo
-                <i class="far fa-arrow-right" style="color: #1a4d8f;"></i>
+                <i class="far fa-arrow-right"></i>
               </a>
             </div>
           </div>
         </div>
         
+        
       </div>
       
     </div>
   </section>
+  <style>
+/* Default: small screens - side-by-side, smaller buttons */
+.buttons-row {
+  justify-content: flex-start; /* left-aligned on mobile */
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.hero-btn{
+  border: 1px solid transparent;
+}
+.small-btn {
+  font-size: 0.85rem;
+  /* padding: 7px 16px; */
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+/* Medium and larger: center buttons and normal size */
+@media (min-width: 768px) {
+  .buttons-row {
+    justify-content: center !important;
+  }
+
+  .small-btn {
+    font-size: 1rem;
+    /* padding: 12px 28px; */
+    border-radius: 6px;
+  }
+}
+
+  </style>
   <!-- CTA Section End -->
   
   <!-- Section 4 End -->
