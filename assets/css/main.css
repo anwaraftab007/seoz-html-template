@@ -2341,6 +2341,9 @@ p {
 .hero-1 .hero-content .hero-btn .theme-btn {
   border: 1px solid transparent;
 }
+.hero-1 .hero-content .hero-btn .try-btn {
+  border: 1px solid transparent;
+}
 .hero-1 .hero-content .hero-btn .theme-btn.style-2 {
   border: 1px solid var(--theme-color-2);
   background-color: transparent;
