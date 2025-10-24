@@ -2021,9 +2021,9 @@ p {
   background-color: var(--white);
   color: var(--header);
   position: absolute;
-  bottom: 5px;
+  /* bottom: 5px; */
   right: 10px;
-  top: 10px;
+  /* top: 10px; */
   margin-left: 0;
 }
 .offcanvas__wrapper .offcanvas__content .try-btn {
@@ -2037,9 +2037,9 @@ p {
   background-color: var(--white);
   color: var(--header);
   position: absolute;
-  bottom: 5px;
+  /* bottom: 5px; */
   right: 10px;
-  top: 10px;
+  /* top: 10px; */
   margin-left: 0;
 }
 
@@ -2276,6 +2276,12 @@ p {
 @media (min-width: 768px){
   .cta-subtext{
   min-width: 900px;
+  }
+  .offcanvas__wrapper .offcanvas__content .try-btn i {
+    display: none;
+  }
+  .offcanvas__wrapper .offcanvas__content .theme-btn i {
+    display: none;
   }
 }
 @media (max-width: 767px) {
