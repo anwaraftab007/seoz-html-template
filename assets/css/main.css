@@ -2026,6 +2026,22 @@ p {
   top: 10px;
   margin-left: 0;
 }
+.offcanvas__wrapper .offcanvas__content .try-btn {
+  width: 100%;
+  text-align: center;
+  background-color: var(--header);
+  color: var(--white);
+  padding: 22px 36px 22px;
+}
+.offcanvas__wrapper .offcanvas__content .try-btn i {
+  background-color: var(--white);
+  color: var(--header);
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  top: 10px;
+  margin-left: 0;
+}
 
 .offcanvas__overlay {
   position: fixed;
